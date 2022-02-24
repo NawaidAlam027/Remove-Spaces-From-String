@@ -1,0 +1,24 @@
+using System;
+
+namespace Remove_space
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str;
+            Console.Write("Enter a String:  ");
+            str = Console.ReadLine();
+            var str1 = string.Empty;
+            var chars = str.ToCharArray();
+            for(var i=0; i<chars.Length; i++)
+            {
+                if(chars[i]!=' ')
+                {
+                    str1 = str1 + chars[i];
+                }
+            }
+            Console.WriteLine("The New String is:{0}", str1);
+            Console.ReadLine();
+        }
+    }
